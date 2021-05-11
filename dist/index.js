@@ -16,7 +16,7 @@
 /***/ (function(__unused_webpack_module, exports, __webpack_require__) {
 
 "use strict";
-eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar vue_1 = __importDefault(__webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.js\"));\r\nvar msg = 'HelloWorld';\r\nconsole.log(msg);\r\nconsole.log('HEllo!!');\r\nvar app = new vue_1.default({\r\n    el: '#app-1',\r\n    data: {\r\n        message: 'Hello Vue!'\r\n    }\r\n});\r\n\n\n//# sourceURL=webpack://vuetssandbox/./src/index.ts?");
+eval("\r\nvar __importDefault = (this && this.__importDefault) || function (mod) {\r\n    return (mod && mod.__esModule) ? mod : { \"default\": mod };\r\n};\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\nvar vue_1 = __importDefault(__webpack_require__(/*! vue */ \"./node_modules/vue/dist/vue.js\"));\r\nfunction created() {\r\n    console.log(\"created!!\");\r\n}\r\nvar app = new vue_1.default({\r\n    el: '#app-1',\r\n    data: {\r\n        message: \"msg\"\r\n    },\r\n    created: created //ここでアローを使ってはいけない\r\n});\r\n\n\n//# sourceURL=webpack://vuetssandbox/./src/index.ts?");
 
 /***/ }),
 

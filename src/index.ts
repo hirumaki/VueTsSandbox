@@ -1,13 +1,13 @@
 import Vue from "vue";
 
-
-const msg:string = 'HelloWorld';
-console.log(msg);
-console.log('HEllo!!');
+function created (){
+    console.log("created!!");
+}
 
 const app = new Vue({
     el: '#app-1',
     data: {
-      message: 'Hello Vue!'
-    }
+      message: "msg"
+    },
+    created: created //ここでアローを使ってはいけない
 })
